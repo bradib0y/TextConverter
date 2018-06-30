@@ -1,4 +1,4 @@
-namespace SecondPhase
+namespace FertilityModelNamespace
 {
     using System;
     using System.Data.Entity;
@@ -21,6 +21,7 @@ namespace SecondPhase
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
+        public virtual DbSet<FertilityModel> FertilityModels { get; set; }
     }
 
     //public class MyEntity

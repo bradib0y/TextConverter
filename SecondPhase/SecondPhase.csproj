@@ -56,10 +56,15 @@
     <Compile Include="Migrations\201806290152037_AddedFertilityModel.Designer.cs">
       <DependentUpon>201806290152037_AddedFertilityModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806291813233_ExecutionReady.cs" />
+    <Compile Include="Migrations\201806291813233_ExecutionReady.Designer.cs">
+      <DependentUpon>201806291813233_ExecutionReady.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FertilityModel.cs" />
+    <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -68,6 +73,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806290152037_AddedFertilityModel.resx">
       <DependentUpon>201806290152037_AddedFertilityModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806291813233_ExecutionReady.resx">
+      <DependentUpon>201806291813233_ExecutionReady.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
