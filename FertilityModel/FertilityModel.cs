@@ -11,6 +11,7 @@ namespace FertilityModelNamespace
     {
         [StringLength(200)]
         [Required]
+        [Display(AutoGenerateField = true, AutoGenerateFilter = true)]        
         public string Id { get; set; }
         public double? Fertility1960 { get; set; }
         public double? Fertility2016 { get; set; }

@@ -1,0 +1,50 @@
+﻿@model FertilityModelNamespace.FertilityModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FertilityModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fertility1960)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fertility1960)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fertility2016)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fertility2016)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Iq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Iq)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -20,9 +20,7 @@ namespace SecondPhase
             static void DisabledMain(string[] args)
         {
             try
-            {
-                //StreamReader srFertility = new StreamReader(@"_fertility.csv", Encoding.UTF8);
-                //StreamReader srIq = new StreamReader(@"_iq.csv", Encoding.UTF8);
+            {               
 
                 List<string> rowListFertility = RowListFromFile(new StreamReader(@"xfe.csv", Encoding.UTF8));
                 List<string> rowListIq = RowListFromFile(new StreamReader(@"xiq.csv", Encoding.UTF8));
@@ -32,14 +30,14 @@ namespace SecondPhase
                 foreach (string row in rowListFertility) {
                     string[] data = row.Split(',');
                     FertilityModel fertilityModel = new FertilityModel(data[0], ConvertOrNull(data[1]), ConvertOrNull(data[2]), null);
-                    repository.AddData(fertilityModel);
+                    //repository.AddData(fertilityModel);     *** disabled to prevent accidental repopulation of db
                 }
 
                 foreach (string row in rowListIq)
                 {
                     string[] data = row.Split(',');
                     FertilityModel fertilityModel = new FertilityModel(data[0], null, null, ConvertOrNull(data[1]));
-                    repository.AddData(fertilityModel);
+                    //repository.AddData(fertilityModel);     *** disabled to prevent accidental repopulation of db
                 }
 
                 Console.WriteLine("Ultimate success. Check database");
